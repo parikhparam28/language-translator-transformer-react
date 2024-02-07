@@ -1,38 +1,69 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.language-container {
+  display: flex;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.textbox-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 800px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textbox-container>textarea, .language-selector {
+  width: 50%;
+}
+
+.language-selector>select {
+  width: 150px;
+}
+
+.progress-container {
+  position: relative;
+  font-size: 14px;
+  color: white;
+  background-color: #e9ecef;
+  border: solid 1px;
+  border-radius: 8px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.progress-bar {
+  padding: 0 4px;
+  z-index: 0;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #007bff;
+  white-space: nowrap;
+}
+
+.progress-text {
+  z-index: 2;
+}
+
+.selector-container {
+  display: flex;
+  gap: 20px;
+}
+
+.progress-bars-container {
+  padding: 8px;
+  height: 140px;
+}
+
+.container {
+  margin: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 10px;
 }
